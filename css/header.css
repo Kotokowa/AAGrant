@@ -1,0 +1,16 @@
+body{
+    background-color: #eee;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-image: url("/resources/header1.jpg");
+}
+
+#gohome{
+    height: 100%;
+    width: auto;
+}
