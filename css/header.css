@@ -5,12 +5,92 @@ body{
 
 .header{
     width: 100%;
+    min-width: 600px;
     height: auto;
     margin: 0;
-    background-image: url("https://raw.githubusercontent.com/Kotokowa/AAGrant/main/resources/header1.jpg");
 }
 
-#gohome{
-    height: 100%;
-    width: auto;
+div.header img.headerbackground{
+    width: 100%;
+    height: auto;
 }
+
+@media screen and (max-size: 1200px) {
+    img.homepage {
+        height: 80px;
+        width: auto;
+    }
+}
+
+.homepage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    object-fit: contain;
+    clear: both;
+}
+
+#search, #tweet{
+    float: right;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+    #search, #tweet{
+        float: right;
+        margin-right: 20px;
+        height: 70%;
+        width: 70%;
+        vertical-align: middle;
+    }
+    
+}
+
+ul.branch{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+ul.branch li, ul.branch li a {
+    margin-top: 18px;
+    text-decoration: none;
+    display: inline;
+    color: #aaa;
+}
+
+ul.branch li+li:before {
+    padding: 8px;
+    color: lightblue;
+    content: ">\00a0";
+}
+
+div.postpage{
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: #e9dac9;
+    border: #aaa 10px;
+}
+
+div.postpage div.post img{
+    float: left;
+    clear: left;
+}
+
+div.post{
+    border-bottom: #aaa 5px;
+}
+
+div.postpage div.post p{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+div.post::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
